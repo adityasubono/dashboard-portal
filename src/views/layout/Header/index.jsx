@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Icon, Menu, Dropdown, Modal, Layout, Avatar } from "antd";
+import {Icon, Menu, Dropdown, Modal, Layout, Avatar, Typography} from "antd";
 import { Link } from "react-router-dom";
 import { logout, getUserInfo } from "@/store/actions";
 import FullScreen from "@/components/FullScreen";
@@ -23,10 +23,10 @@ const LayoutHeader = (props) => {
   token && getUserInfo(token);
   const handleLogout = (token) => {
     Modal.confirm({
-      title: "注销",
-      content: "确定要退出系统吗?",
-      okText: "确定",
-      cancelText: "取消",
+      title: "Confirmation",
+      content: "Are you going to logout ?",
+      okText: "Ok",
+      cancelText: "Cancel",
       onOk: () => {
         logout(token);
       },
@@ -44,7 +44,7 @@ const LayoutHeader = (props) => {
   const menu = (
     <Menu onClick={onClick}>
       <Menu.Item key="dashboard">
-        <Link to="/dashboard">首页</Link>
+        <Link to="/dashboard">Dashboard</Link>
       </Menu.Item>
       <Menu.Item key="project">
         <a
@@ -52,11 +52,11 @@ const LayoutHeader = (props) => {
           href="https://github.com/NLRX-WJC/react-antd-admin-template"
           rel="noopener noreferrer"
         >
-          项目地址
+          Documentation
         </a>
       </Menu.Item>
       <Menu.Divider />
-      <Menu.Item key="logout">注销</Menu.Item>
+      <Menu.Item key="logout">Logout</Menu.Item>
     </Menu>
   );
   const computedStyle = () => {
@@ -91,10 +91,11 @@ const LayoutHeader = (props) => {
         <BreadCrumb />
         <div className="right-menu">
           <FullScreen />
-          {showSettings ? <Settings /> : null}
+          {showSettings ?  <Settings/> : ''}
           <div className="dropdown-wrap">
             <Dropdown overlay={menu}>
               <div>
+                <b className={'mt'}>{token}</b>
                 <Avatar shape="square" size="medium" src={avatar} />
                 <Icon style={{ color: "rgba(0,0,0,.3)" }} type="caret-down" />
               </div>

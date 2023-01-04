@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
-import { Form, Icon, Input, Button, message, Spin } from "antd";
+import {Form, Icon, Input, Button, message, Spin} from "antd";
 import { connect } from "react-redux";
 import DocumentTitle from "react-document-title";
 import "./index.less";
@@ -17,7 +17,7 @@ const Login = (props) => {
     setLoading(true);
     login(username, password)
       .then((data) => {
-        message.success("登录成功");
+        message.success("Welcome");
         handleUserInfo(data.token);
       })
       .catch((error) => {
@@ -46,7 +46,7 @@ const Login = (props) => {
         const { username, password } = values;
         handleLogin(username, password);
       } else {
-        console.log("检验失败!");
+        console.log("Error!");
       }
     });
   };
@@ -55,29 +55,29 @@ const Login = (props) => {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <DocumentTitle title={"用户登录"}>
+    <DocumentTitle title={"Login"}>
       <div className="login-container">
         <Form onSubmit={handleSubmit} className="content">
           <div className="title">
-            <h2>用户登录</h2>
+            <h2>Login</h2>
           </div>
-          <Spin spinning={loading} tip="登录中...">
+          <Spin spinning={loading} tip="Loading...">
             <Form.Item>
               {getFieldDecorator("username", {
                 rules: [
                   {
                     required: true,
                     whitespace: true,
-                    message: "请输入用户名",
+                    message: "Email Wronged",
                   },
                 ],
-                initialValue: "admin", // 初始值
+                initialValue: "", // admin
               })(
                 <Input
                   prefix={
                     <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />
                   }
-                  placeholder="用户名"
+                  placeholder="Email"
                 />
               )}
             </Form.Item>
@@ -87,7 +87,7 @@ const Login = (props) => {
                   {
                     required: true,
                     whitespace: true,
-                    message: "请输入密码",
+                    message: "Password Wronged",
                   },
                 ],
                 initialValue: "123456", // 初始值
@@ -97,7 +97,7 @@ const Login = (props) => {
                     <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />
                   }
                   type="password"
-                  placeholder="密码"
+                  placeholder="Password"
                 />
               )}
             </Form.Item>
@@ -107,15 +107,8 @@ const Login = (props) => {
                 htmlType="submit"
                 className="login-form-button"
               >
-                登录
+                Login
               </Button>
-            </Form.Item>
-            <Form.Item>
-              <span>账号 : admin 密码 : 随便填</span>
-              <br />
-              <span>账号 : editor 密码 : 随便填</span>
-              <br />
-              <span>账号 : guest 密码 : 随便填</span>
             </Form.Item>
           </Spin>
         </Form>

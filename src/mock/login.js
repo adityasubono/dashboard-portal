@@ -2,6 +2,17 @@ const tokens = {
   admin: "admin-token",
   guest: "guest-token",
   editor: "editor-token",
+  superAdmin: "super-admin-token",
+  administrator: "administrator-token",
+  student: "student-token",
+  teacher: "teacher-token",
+  staff: "staff-token",
+  ceo: "ceo-token",
+  advisor: "advisor-token",
+  admission: "admission-token",
+  corporateSecretary: "corporate-secretary-token",
+  parent: "parent-token",
+  head: "head-token",
 };
 
 const users = {
@@ -9,6 +20,7 @@ const users = {
     id: "admin",
     role: "admin",
     name: "Aji Sujana",
+    email: "ajisujana@highscope.com",
     avatar: "https://s1.ax1x.com/2020/04/28/J5hUaT.jpg",
     description: "Admin",
   },
@@ -16,6 +28,7 @@ const users = {
     id: "editor",
     role: "editor",
     name: "Joko Suwarto",
+    email: "jokosuwarto@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Editor",
   },
@@ -23,6 +36,7 @@ const users = {
     id: "guest",
     role: "guest",
     name: "Eka Windyasari",
+    email: "ekawidyasari@gmail.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Visitor",
   },
@@ -31,6 +45,7 @@ const users = {
     id: "super-admin",
     role: "super-admin",
     name: "Aji Saka",
+    email: "ajisaka@highscope.com",
     avatar: "https://s1.ax1x.com/2020/04/28/J5hUaT.jpg",
     description: "Super Admin Level Holding",
   },
@@ -39,6 +54,7 @@ const users = {
     id: "administrator-admin",
     role: "administrator",
     name: "Jaya Suprana",
+    email: "jayasuprana@highscope.com",
     avatar: "https://s1.ax1x.com/2020/04/28/J5hUaT.jpg",
     description: "Administrator or admin level unit",
   },
@@ -47,6 +63,7 @@ const users = {
     id: "admin",
     role: "admin",
     name: "Lisa Qurin",
+    email: "lisaqurin@highscope.com",
     avatar: "https://s1.ax1x.com/2020/04/28/J5hUaT.jpg",
     description: "CEO",
   },
@@ -54,6 +71,7 @@ const users = {
     id: "advisor",
     role: "advisor",
     name: "Damar Sujana",
+    email: "damarsujana@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Advisor",
   },
@@ -61,6 +79,7 @@ const users = {
     id: "corporate-secretary",
     role: "corporate-secretary",
     name: "Maria Jannah",
+    email: "mariajannah@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Corporate Secretary",
   },
@@ -68,7 +87,8 @@ const users = {
   "chief-token": {
     id: "chief",
     role: "chief",
-    name: "Joko Surwanto",
+    name: "Ibrahim Surwanto",
+    email: "ibrahimsurwarno@highscope.com",
     avatar: "https://s1.ax1x.com/2020/04/28/J5hUaT.jpg",
     description: "Chief",
   },
@@ -76,6 +96,7 @@ const users = {
     id: "assisted-chief",
     role: "assisted-chief",
     name: "Hari Suhari",
+    email: "harisuhari@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Assisted Chief",
   },
@@ -83,6 +104,7 @@ const users = {
     id: "general-manager",
     role: "general-manager",
     name: "Harry Miguare",
+    email: "harrymiguare@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"General Manager",
   },
@@ -90,6 +112,7 @@ const users = {
     id: "head",
     role: "head",
     name: "Queen Harliana",
+    email: "queenharliana@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Head",
   },
@@ -97,13 +120,15 @@ const users = {
     id: "staff",
     role: "staff",
     name: "Anita Margaret",
+    email: "anitamargaret@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Staff",
   },
   "staff-token": {
     id: "staff",
     role: "staff",
-    name: "Anita Margaret",
+    name: "Julien Putra",
+    email: "julienputra@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Staff",
   },
@@ -111,6 +136,7 @@ const users = {
     id: "student",
     role: "student",
     name: "Arkan Al Farabi",
+    email: "arkanalfarabi@gmail.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Student highscope",
   },
@@ -118,6 +144,7 @@ const users = {
     id: "teacher",
     role: "teacher",
     name: "Freddy Gumelar",
+    email: "freddygumelar@highscope.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Teacher",
   },
@@ -125,6 +152,7 @@ const users = {
     id: "parent",
     role: "parent",
     name: "Mukidi Gultom",
+    email: "mukidigultom@gmail.com",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
     description:"Parent",
   },
@@ -134,10 +162,11 @@ export default {
   login: (config) => {
     const { username } = JSON.parse(config.body);
     const token = tokens[username];
+    console.log(username)
     if (!token) {
       return {
         status: 1,
-        message: "用户名或密码错误",
+        message: "Wrong",
       };
     }
     return {
@@ -148,10 +177,11 @@ export default {
   userInfo: (config) => {
     const token = config.body;
     const userInfo = users[token];
+    console.log(token)
     if (!userInfo) {
       return {
         status: 1,
-        message: "获取用户信息失败",
+        message: "Success",
       };
     }
     return {
