@@ -74,7 +74,8 @@
     "customize-cra": "^0.9.1",
     "cz-conventional-changelog": "^3.0.2",
     "mockjs": "^1.1.0",
-    "react-app-rewired": "^2.1.5"
+    "react-app-rewired": "^2.1.5",
+    "gh-pages": "^4.0.0"
   },
   "config": {
     "commitizen": {
