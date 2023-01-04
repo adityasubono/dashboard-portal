@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/assets/images/highscope/HighScopeLogo.png";
+import logo from "@/assets/images/highscope/logo-highscope.png";
 import "./index.less";
 const Logo = () => {
   return (
