@@ -17,7 +17,7 @@ const menuList = [
     title: "Admission",
     path: "/admission",
     icon: "home",
-    roles:["admission"]
+    roles:["admission", "staff", "teacher", "parent", "student"]
   },
 
   {
