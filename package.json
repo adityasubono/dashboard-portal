@@ -50,7 +50,8 @@
     "eject": "react-scripts eject",
     "commit": "git cz",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "ghp": "react-scripts build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

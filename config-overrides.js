@@ -15,7 +15,7 @@ const addCustomize = () => (config) => {
   if (config.output.publicPath) {
     config.output.publicPath =
       process.env.NODE_ENV === "production"
-        ? "/react-antd-admin-template/"
+        ? "/shiled-portal/"
         : "/";
   }
   if (config.resolve) {
