@@ -48,7 +48,7 @@ const RightPanel = (props) => {
   return (
     <div className="rightSettings">
       <Drawer
-        title="系统设置"
+        title="Setting"
         placement="right"
         width={350}
         onClose={toggleSettingPanel}
@@ -56,7 +56,7 @@ const RightPanel = (props) => {
       >
         <Row>
           <Col span={12}>
-            <span>侧边栏 Logo</span>
+            <span>Show Logo</span>
           </Col>
           <Col span={12}>
             <Switch
@@ -70,7 +70,7 @@ const RightPanel = (props) => {
         <Divider dashed />
         <Row>
           <Col span={12}>
-            <span>固定 Header</span>
+            <span>Show Header</span>
           </Col>
           <Col span={12}>
             <Switch
@@ -84,7 +84,7 @@ const RightPanel = (props) => {
         <Divider dashed />
         <Row>
           <Col span={12}>
-            <span>开启 Tags-View</span>
+            <span>Show Tags-View</span>
           </Col>
           <Col span={12}>
             <Switch

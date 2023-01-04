@@ -44,7 +44,7 @@ const LayoutHeader = (props) => {
   const menu = (
     <Menu onClick={onClick}>
       <Menu.Item key="dashboard">
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/dashboard">Setting</Link>
       </Menu.Item>
       <Menu.Item key="project">
         <a
@@ -90,7 +90,7 @@ const LayoutHeader = (props) => {
         <Hamburger />
         <BreadCrumb />
         <div className="right-menu">
-          <FullScreen />
+          {/*<FullScreen />*/}
           {showSettings ?  <Settings/> : ''}
           <div className="dropdown-wrap">
             <Dropdown overlay={menu}>

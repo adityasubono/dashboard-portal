@@ -3,7 +3,7 @@ const menuList = [
     title: "Dashboard",
     path: "/dashboard",
     icon: "home",
-    roles:["super-admin","administrator","teacher","student", "ceo", "advisor"]
+    roles:["ceo", "head", "advisor","chief","assisted-chief","executive", "super-admin", "admission", "staff", "teacher", "parent", "student"]
   },
 
   {
