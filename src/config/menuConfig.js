@@ -24,7 +24,7 @@ const menuList = [
     title: "Curriculum",
     path: "/curriculum",
     icon: "home",
-    roles:["staff", "teacher"]
+    roles:["staff", "teacher", "head"]
   },
 
   {
